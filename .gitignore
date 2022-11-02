@@ -1,0 +1,8 @@
+*.pyc
+
+git-push
+
+/docs/build
+
+# Setuptools distribution folder.
+#/dist/
