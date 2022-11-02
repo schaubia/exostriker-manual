@@ -28,7 +28,7 @@ There are 3 ways to load radial velocity (RV) data on exostriker.
 Fitting RV data
 ==================
 
-The radial velocity data can be analyzed utilizing either Levenberg-Marquardt (L-M) or Simplex algorithm, and either Keplerian or Dynamic model.
+The radial velocity data can be analyzed utilizing either Levenberg-Marquardt (L-M) or Simplex algorithms, and either Keplerian or Dynamic model.
 The periodicities in the RV signal are found using the Generalized Lomb-Scargle (GLS) periodogram which scans the data and fits a sinusoidal curve on it.
 GLS o-c provides GLS periodogram of the residuals. Fitting with LM algorithm provides information regarding where the data offset is, i.e. it finds the data mean velocity in [m/s]. 
 
@@ -115,7 +115,7 @@ Neither L-M, nor Simplex methods can optimize both parameter errors and jitter/j
 Multiplanetary systems
 ======================
 
-In case of **multiplanetary systems** it is kind to consider the planets masses and distances from each other (close orbits).
+In case of **multiplanetary systems**, consider the planets masses and distances from each other (close orbits).
 Massive planets with close distances from the host star, will surely interact with each other due to gravity. 
 Then a further investigation using the **Dynamical model** is necessary. That will take into account the gravitational interactions between the massive bodies by integrating the equations of motion using the *Gragg-Bulirsch-Stoer* method.
 
@@ -126,8 +126,12 @@ Then a further investigation using the **Dynamical model** is necessary. That wi
    *Dynamical fit.*
 
 
-Before enabling the **Dynamical** option make sure that the orbital parameters that are acquired so far correspond to the **best Keplerian fit**, because they will be used as an initial guess for this *Dynamical fit*.
-The next thing to be noticed is that the orbital parameters inclination (i) and the longitude of the ascending node (Ω) become available. The dynamical model has the advantage of being able to fit for mutually inclined orbits. For the purposes of this tutorial we assume edge-on coplanar
-orbits (i=90, Ω=0) for consistency with the unperturbed Keplerian frame and in order to work with minimum dynamical masses.
+Before enabling the **Dynamical** option make sure that the orbital parameters that are acquired so far correspond to the **best Keplerian fit**, because they will be used as an initial guess for this *Dynamical fit*. When choosing dynamical fit, the orbital parameters inclination (i) and the longitude of the ascending node (Ω) become available. The dynamical model has the advantage of being able to fit for mutually inclined orbits. 
+Exostriker can also fit planetary systems with coplanar configuration (planets with same inclination i and Ω=0). For this purpose go to **Models param** > **Models** > **RV model** and select the option *Force coplanar incl. in case of dyn. model*. Note that this option is only available with SciPy optimization (selected from the radio-button). Also note that in this case only the inclination for the first planet will be available for update in the **Planet param.** and **Limits and Priors** tabs.
+
+
+
+
+
 
 
