@@ -397,7 +397,7 @@ Input/Output parameters panel
 +----------------------------+-------------------------------------------------------------+
 |**e**                       | Orbital eccentricity                                        |
 +----------------------------+-------------------------------------------------------------+
-|**ω [deg]**                 | Argument of periastron of the planet                        |
+|**ω [deg]**                 | Argument of periastron                                      |
 +----------------------------+-------------------------------------------------------------+
 |**Ma [deg]**                | Mean anomaly of the planet at the first observational epoch |
 +----------------------------+-------------------------------------------------------------+
@@ -420,7 +420,7 @@ Input/Output parameters panel
 |**t**\ :sub:`ω`\ [**d**]    | Time of periastron passage                                  |
 +----------------------------+-------------------------------------------------------------+
 
-The Exo-Striker uses the equations discussed in Lee & Peale (2003, http://dx.doi.org/10.1086/375857). 
+The Exo-Striker uses the Jacobi coordinate system equations discussed in Lee & Peale (2003, http://dx.doi.org/10.1086/375857). 
 See, in particular, Equation (3) and the paragraph just above it for the orientation of the coordinate system
 
 Depending on the radio-buttons on the upper-right side of the panel, the planet parameters change as follows:
