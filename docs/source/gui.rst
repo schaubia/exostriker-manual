@@ -26,7 +26,7 @@ This documentation provides information regarding the basic parameters that Exo-
 	
 	**Save multi session**: Save all opened sessions in an .mses file.
 	
-	**Open RVmod init file**: 
+	**Open RVmod init file**: *In developer mode!*.
 	
 	**Open RVBank file**: *In developer mode!*.
 	
